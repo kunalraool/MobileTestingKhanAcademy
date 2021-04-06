@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="3" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43829" started-at="2021-04-05T11:19:47 IST" finished-at="2021-04-05T11:20:31 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="43829" started-at="2021-04-05T11:19:47 IST" finished-at="2021-04-05T11:20:31 IST">
+      <class name="mobileTests.Tests">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:mobileTests.Tests@43bd930a]" name="beforeTest" is-config="true" duration-ms="32881" started-at="2021-04-05T11:19:47 IST" finished-at="2021-04-05T11:20:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="dismissMessagesTest()[pri:0, instance:mobileTests.Tests@43bd930a]" name="dismissMessagesTest" duration-ms="10004" started-at="2021-04-05T11:20:20 IST" finished-at="2021-04-05T11:20:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dismissMessagesTest -->
+        <test-method status="SKIP" signature="SignInUsingDataProvider(java.util.Hashtable)[pri:4, instance:mobileTests.Tests@43bd930a]" name="SignInUsingDataProvider" duration-ms="0" started-at="2021-04-05T11:20:31 IST" data-provider="getData" depends-on-methods="mobileTests.Tests.dismissMessagesTest" finished-at="2021-04-05T11:20:31 IST">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+at resource.dataUtil.getData(dataUtil.java:36)
+at mobileTests.Tests.getData(Tests.java:142)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInUsingDataProvider -->
+        <test-method status="PASS" signature="teardownSteps()[pri:0, instance:mobileTests.Tests@43bd930a]" name="teardownSteps" is-config="true" duration-ms="0" started-at="2021-04-05T11:20:31 IST" finished-at="2021-04-05T11:20:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSteps -->
+      </class> <!-- mobileTests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
